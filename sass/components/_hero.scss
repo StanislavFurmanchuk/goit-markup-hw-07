@@ -1,0 +1,46 @@
+/* Стили шапки */
+.hero {
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/herobg.jpg);
+  background-color: var(--hero-footer-bg-color);
+  padding: 200px 0px;
+  max-width: 1600px;
+  height: 600px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__container {
+    text-align: center;
+  }
+  &__title {
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+  }
+
+  &__button-order {
+    padding: 10px 32px;
+    border: 0px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 2;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--secondary-text-color);
+    background-color: var(--focus-color);
+
+    &:focus,
+    &:hover {
+      background-color: #188ce8;
+    }
+  }
+}

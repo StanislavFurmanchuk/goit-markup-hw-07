@@ -1,0 +1,43 @@
+/* Особенности */
+
+.section-fetures {
+  padding-bottom: 0px;
+}
+.feture-list {
+  display: flex;
+
+  &__item {
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  &__feture {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    color: var(--extra-text-color);
+  }
+
+  &__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 120px;
+    background: var(--button-bg-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+}

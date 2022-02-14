@@ -1,0 +1,111 @@
+/* Стили хедера */
+header {
+  border-bottom: 1px solid #ececec;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+
+  &__logo {
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #000;
+  }
+}
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+
+  &__list-item {
+    margin-right: 50px;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+  //   .site-nav-link
+  &__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    position: relative;
+    padding-bottom: 32px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--time-function);
+
+    &:hover,
+    &:focus {
+      color: var(--focus-color);
+    }
+  }
+}
+
+.auth-nav {
+  display: flex;
+
+  &__list-item {
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  &__list-item svg {
+    margin-right: 10px;
+    fill: var(--extra-text-color);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: var(--time-function);
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--extra-text-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--time-function);
+
+    &:focus svg,
+    &:hover svg {
+      fill: var(--focus-color);
+    }
+
+    &:focus,
+    &:hover {
+      color: var(--focus-color);
+    }
+  }
+}
+
+.colorised-text-logo {
+  color: var(--focus-color);
+}
+
+.current-page::after {
+  display: flex;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  bottom: 0;
+  background-color: var(--focus-color);
+}
